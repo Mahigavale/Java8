@@ -2,6 +2,7 @@ package core;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class Lamda2 {
 
@@ -47,7 +48,22 @@ public class Lamda2 {
 			
 		});
 		
+		Consumer<Student> method1= (n)->{System.out.println(n);};
+		Dscl.forEach(method1);
 		
+		Consumer<Student> method2=(n)->{
+			if(n.getStudent_id()>15)
+			{
+				System.out.println("exceeded !");
+			}
+			else
+			{
+				System.out.println("not exceeded !");
+			}
+		};
+		
+		
+		Dscl.forEach(method2);
 	}
 
 }
