@@ -27,6 +27,11 @@ public class Stream {
 			System.out.println(nm);
 		}
 		
+		System.out.println("foreach :");
+		for(String name:names)
+		{
+			System.out.println(name+" ");
+		}
 		
 				
 	}
