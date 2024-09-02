@@ -1,0 +1,1 @@
+This repository contains Java 8 codes and Concepts.
