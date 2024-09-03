@@ -16,7 +16,7 @@ public class Stream {
 		names.add("gavale");
 		names.add("Latur");
 		
-		names.stream().forEach((name)->{System.out.println(name.toUpperCase());});
+		names.stream().forEach((n)->{System.out.println(n.toUpperCase());});
 		
 		
 		List<String> answer=names.stream().map(String::toUpperCase).collect(Collectors.toList());
