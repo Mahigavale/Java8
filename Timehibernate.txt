@@ -1,0 +1,13 @@
+
+
+@CreationTimestamp :=
+it is the annotation used in the hibernate to maintain the created on timestamp for the particular
+entity table. it is noted that the @Column(updatable=false) must be set in order to avoid the loss
+of the data while updating the particular column in the database.
+
+
+@Updatedontimestamp :=
+it is used to actually store the modified value of the column in the given table for the particular time.
+it stores the last date time value for the specific column updated on.
+
+

@@ -1,0 +1,31 @@
+Objective:
+The purpose of this assignment is to practice exception handling in Java using the throw keyword. By completing this assignment, you will understand how to explicitly throw exceptions in Java, create custom exceptions, and handle exceptions using try-catch blocks.
+
+Assignment Instructions:
+Create a Java class named BankAccount. This class should have the following attributes:
+
+accountNumber (String)
+accountHolderName (String)
+balance (double)
+Define the following methods in the BankAccount class:
+
+deposit(double amount)
+This method should increase the balance by the amount.
+Throw an IllegalArgumentException if the amount is less than or equal to 0.
+withdraw(double amount)
+This method should decrease the balance by the amount.
+Throw a custom exception InsufficientFundsException if the withdrawal amount is greater than the available balance.
+Create a custom exception class named InsufficientFundsException:
+
+This class should extend Exception.
+The constructor should accept a custom error message that is passed when the exception is thrown.
+Use the throw keyword inside the withdraw and deposit methods to manually trigger exceptions when necessary.
+
+Create a Main class with a main method:
+
+Inside the main method, create a BankAccount object.
+Call the deposit and withdraw methods on the BankAccount object inside try-catch blocks.
+Handle the following exceptions:
+IllegalArgumentException for invalid deposit amounts.
+InsufficientFundsException for invalid withdrawal attempts.
+Print meaningful messages in each catch block to indicate what went wrong.

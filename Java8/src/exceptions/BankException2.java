@@ -10,8 +10,3 @@ public class BankException2 {
 }
 
 
-class User{
-	
-	Account acc=new Account("");
-	
-}
